@@ -19,7 +19,7 @@
     // }
 
     (async function init() {
-        const response = await fetch('http://localhost:3000/get-profile');
+        const response = await fetch('http://178.105.179.238:3000/get-profile');
         console.log("response", response);
         const user = await response.json();
         console.log(JSON.stringify(user));
@@ -42,7 +42,7 @@
             interests: document.getElementById('input-interests').value
         };
         
-        const response = await fetch('http://localhost:3000/update-profile', {
+        const response = await fetch('http://178.105.179.238:3000/update-profile', {
             method: "POST",
             headers: {
               'Accept': 'application/json',
